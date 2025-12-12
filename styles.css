@@ -1,0 +1,108 @@
+body {
+  background-color: #eee;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container {
+  margin: 0 auto;
+  width: 400px;
+  min-width: 350px;
+  background-color: #fefefe;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.radio-group, input, select, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;  
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/*  
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+} */
+
+fieldset {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group label {
+  display: inline-block;
+  width: 5em;
+  margin: 0;
+  cursor: pointer;
+  font-weight: normal;
+  vertical-align: center;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid blue;
+}
+
+input:valid, select:valid, textarea:valid {
+  border: 1.5px solid green;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border: 1.5px solid red;
+}
+
+
+button {
+  width: 100%;
+  background-color: lightgreen;
+  padding: 8px;
+  font-size: 1.1em;
+  border-radius: 5px;
+
+}
+button:hover {
+  background-color: #8afe8a;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  transition: border-color, 0.3s;
+}
+
+.radio-group input[type="radio"]:checked {
+  box-shadow: inset 0 0 0 4px white;
+  border-color: green;
+  background-color: green;
+  color: green;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+
+input:first-of-type {
+  padding: 12px;
+}
+
+textarea + label {
+  margin-bottom: 20px;
+}
